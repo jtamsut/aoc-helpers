@@ -38,3 +38,12 @@ func ParseIntList(fileName string) []int64 {
 	}
 	return d
 }
+
+// Sum ... adds up the elements in a list
+func Sum(lst []int64) int64 {
+	var sum int64
+	for _, val := range lst {
+		sum += val
+	}
+	return sum
+}
