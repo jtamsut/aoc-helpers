@@ -11,9 +11,9 @@ import (
 
 // WrapError ... handles errors
 func WrapError(e error) {
-  if err != nil {
-    log.Fatal(errors.Wrap(e, "Couldn't parse input"))
-  }
+	if e != nil {
+		log.Fatal(errors.Wrap(e, "Couldn't parse input"))
+	}
 }
 
 // BreakOnNewLines ... takes a file and returns a slice of strings
