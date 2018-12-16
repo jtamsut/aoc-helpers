@@ -87,3 +87,19 @@ func LettersToNums(b string) int {
 	}
 	return m[b]
 }
+
+// Max ... determines max of two ints
+func Max(a, b int) int {
+	if a < b {
+		return b
+	}
+	return a
+}
+
+// Min ... return min of two ints
+func Min(a, b int) int {
+	if a > b {
+		return b
+	}
+	return a
+}
