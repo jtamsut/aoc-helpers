@@ -11,7 +11,9 @@ import (
 
 // WrapError ... handles errors
 func WrapError(e error) {
-	log.Fatal(errors.Wrap(e, "Couldn't parse input"))
+  if err != nil {
+    log.Fatal(errors.Wrap(e, "Couldn't parse input"))
+  }
 }
 
 // BreakOnNewLines ... takes a file and returns a slice of strings
@@ -54,8 +56,8 @@ func Sum(lst ...int64) int64 {
 }
 
 // LettersToNums ... returns map that maps letter to number
-func LettersToNums() map[string]int {
-	return map[string]int{
+func LettersToNums(b string) int {
+	m := map[string]int{
 		"a": 0,
 		"b": 1,
 		"c": 2,
@@ -83,4 +85,5 @@ func LettersToNums() map[string]int {
 		"y": 24,
 		"z": 25,
 	}
+	return m[b]
 }
