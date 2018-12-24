@@ -36,3 +36,8 @@ func DetermineOverlap(p Box, m Box) (bool, Box) {
 		Height: boxHeight,
 	}
 }
+
+// Area ... gets area of a box
+func Area(b Box) int {
+	return b.Height * b.Width
+}

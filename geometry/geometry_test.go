@@ -18,8 +18,8 @@ func testDetermineOverlapFunc(a Box, b Box, overlap bool, overlapBox Box) func(*
 	return func(t *testing.T) {
 		o, Ob := DetermineOverlap(a, b)
 		if o == overlap {
-			if overlapBox.leftX == Ob.leftX && overlapBox.topY == Ob.topY {
-				if overlapBox.width == Ob.width && overlapBox.height == Ob.height {
+			if overlapBox.LeftX == Ob.LeftX && overlapBox.TopY == Ob.TopY {
+				if overlapBox.Width == Ob.Width && overlapBox.Height == Ob.Height {
 					return
 				}
 			}
